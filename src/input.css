@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* h1 {
+      @apply text-h1 font-serif;
+    }
+    h2 {
+      @apply text-h2 font-serif;
+    }
+    h3 {
+        @apply text-h1 font-sans font-bold;
+      }
+    h4 {
+        @apply text-h2 font-sans font-bold;
+    }
+    h5 {
+      @apply text-h1 font-sans font-bold;
+    }
+    base {
+      @apply text-h2 font-sans;
+    } */
+  }
+
+ 
