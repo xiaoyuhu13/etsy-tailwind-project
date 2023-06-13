@@ -7,15 +7,6 @@ module.exports = {
       sans: ['Roboto', 'sans-serif'],
       serif: ['Georgia', 'serif'],
     },
-      /* realized some colors in the stylesheet are only used once or twice in the design,so I didn't add them here*/
-      colors: {
-      'blue-light': '#d7e6f4',
-      'hover-button': '#efefef',
-      'hover-subscribe': '#808080',
-      'hover-text': '#595959',
-      'text-main': '#222222',
-      'text-secondary': '#595959',
-    },
     borderRadius: {
         'sm': '0.5rem',
         'md': '1rem',
@@ -34,6 +25,15 @@ module.exports = {
           6: '2.25rem',
           7: '3rem',
           8: '4.5rem',
+    },
+    /* realized some colors in the stylesheet are only used once or twice in the design,so I didn't add them here*/
+      colors: {
+      'blue-light': '#d7e6f4',
+      'hover-button': '#efefef',
+      'hover-subscribe': '#808080',
+      'hover-text': '#595959',
+      'text-main': '#222222',
+      'text-secondary': '#595959',
     },
   },
   plugins: [],
