@@ -17,11 +17,20 @@
         @apply text-xl font-sans font-bold;
     }
     h5 {
-      @apply text-base font-sans font-bold;
+      @apply text-base font-sans;
     }
     base {
       @apply text-base font-sans;
     }
   }
+
+  @layer utilities {
+    .sale {
+      text-decoration: line-through;
+      font-weight: 400;
+    }
+  }
+  
+
 
  

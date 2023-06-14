@@ -35,6 +35,14 @@ module.exports = {
       'text-main': '#222222',
       'text-secondary': '#595959',
     },
+    gridTemplateRows: {
+        // Simple 8 row grid
+        '7': 'repeat(7, minmax(0, 1fr))',
+        // Complex site-specific row configuration
+        'collections': '2fr 3fr 3fr',
+        'fathersday': 'auto auto 7rem 7rem auto',
+        'decor': '1fr 3fr 3fr 1fr',
   },
   plugins: [],
+}
 }
