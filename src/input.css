@@ -7,17 +7,17 @@
       @apply text-4xl font-serif;
     }
     h2 {
-      @apply text-[2rem] font-serif;
+      @apply text-[2rem] font-serif font-light;
     }
     
     h3 {
-        @apply text-[1.75rem] font-sans font-bold;
+        @apply text-[1.75rem] font-sans;
       }
     h4 {
-        @apply text-xl font-sans font-bold;
+        @apply text-xl font-sans font-semibold;
     }
     h5 {
-      @apply text-base font-sans;
+      @apply text-base font-sans font-medium;
     }
     base {
       @apply text-base font-sans;

@@ -13,7 +13,6 @@ module.exports = {
         'lg': '2rem',
         'full': '9999px',
     },
-      },
     extend: {
       spacing:{
           0: '0',
@@ -36,13 +35,15 @@ module.exports = {
       'text-secondary': '#595959',
     },
     gridTemplateRows: {
-        // Simple 8 row grid
+        // Simple 7 row grid
         '7': 'repeat(7, minmax(0, 1fr))',
         // Complex site-specific row configuration
         'collections': '2fr 3fr 3fr',
-        'fathersday': 'auto auto 7rem 7rem auto',
-        'decor': '1fr 3fr 3fr 1fr',
+        'fathersday': '1rem 2rem 7rem 7rem 2rem',
+        'decor': '1fr 2.5fr 2.5fr 1fr',
+        'curated': 'auto auto 6.5rem 6.5rem auto',
   },
   plugins: [],
+}
 }
 }
