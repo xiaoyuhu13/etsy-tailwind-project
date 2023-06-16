@@ -25,6 +25,7 @@
     "fast-glob": "^3.2.12",
     "fastq": "^1.15.0",
     "fill-range": "^7.0.1",
+    "flowbite": "^1.6.6",
     "fs.realpath": "^1.0.0",
     "fsevents": "^2.3.2",
     "function-bind": "^1.1.1",

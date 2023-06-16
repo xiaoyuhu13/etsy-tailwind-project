@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
+    content: [
+      "./src/**/*.{html,js}",
+      "./node_modules/flowbite/**/*.js",
+    ],
     theme: {
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
@@ -43,7 +46,9 @@ module.exports = {
         'decor': '1fr 2.5fr 2.5fr 1fr',
         'curated': 'auto auto 6.5rem 6.5rem auto',
   },
-  plugins: [],
-}
-}
+},
+},
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
