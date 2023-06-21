@@ -42,9 +42,13 @@ module.exports = {
         '7': 'repeat(7, minmax(0, 1fr))',
         // Complex site-specific row configuration
         'collections': '2fr 3fr 3fr',
-        'fathersday': '1rem 2rem 7rem 7rem 2rem',
+        'fathersday': '4rem 7rem 7rem 2rem',
         'decor': '1fr 2.5fr 2.5fr 1fr',
         'curated': 'auto auto 6.5rem 6.5rem auto',
+  },
+  gridTemplateColumns: {
+    'fathers-day-sm': '1.5fr 1.5fr 2fr 1.5fr 1.5fr',
+    'fathers-day-lg': '3fr 2fr 1fr 3fr',
   },
 },
 },

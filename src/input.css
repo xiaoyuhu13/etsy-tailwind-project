@@ -29,6 +29,20 @@
       text-decoration: line-through;
       font-weight: 400;
     }
+    .fd-ellipsis {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 1rem;
+    }
+
+    .blog-ellipsis {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
   
 

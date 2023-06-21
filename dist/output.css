@@ -1156,6 +1156,10 @@ base {
   grid-row-start: 2;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1204,6 +1208,10 @@ base {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -1378,6 +1386,10 @@ base {
   height: 100%;
 }
 
+.h-\[\] {
+  height: ;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1425,6 +1437,10 @@ base {
 
 .w-full {
   width: 100%;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .flex-1 {
@@ -1521,10 +1537,6 @@ base {
   grid-template-rows: repeat(7, minmax(0, 1fr));
 }
 
-.grid-rows-collections {
-  grid-template-rows: 2fr 3fr 3fr;
-}
-
 .grid-rows-curated {
   grid-template-rows: auto auto 6.5rem 6.5rem auto;
 }
@@ -1534,7 +1546,7 @@ base {
 }
 
 .grid-rows-fathersday {
-  grid-template-rows: 1rem 2rem 7rem 7rem 2rem;
+  grid-template-rows: 4rem 7rem 7rem 2rem;
 }
 
 .flex-row {
@@ -1599,10 +1611,6 @@ base {
 
 .gap-6 {
   gap: 2.25rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1883,6 +1891,10 @@ base {
   padding-bottom: 4.5rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1933,6 +1945,10 @@ base {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-sans {
@@ -2109,6 +2125,35 @@ base {
   font-weight: 400;
 }
 
+.fd-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.blog-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .lg\:invisible.tooltip > .tooltip-arrow:before {
+    visibility: hidden;
+  }
+
+  .lg\:invisible[role="tooltip"] > [data-popper-arrow]:before {
+    visibility: hidden;
+  }
+
+  .lg\:invisible[role="tooltip"] > [data-popper-arrow]:after {
+    visibility: hidden;
+  }
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2273,6 +2318,22 @@ base {
     pointer-events: none;
   }
 
+  .sm\:visible {
+    visibility: visible;
+  }
+
+  .sm\:relative {
+    position: relative;
+  }
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .sm\:col-start-1 {
+    grid-column-start: 1;
+  }
+
   .sm\:row-span-2 {
     grid-row: span 2 / span 2;
   }
@@ -2281,14 +2342,22 @@ base {
     grid-row: span 3 / span 3;
   }
 
-  .sm\:mx-\[calc\(8px\+1\.5625vw\)\] {
-    margin-left: calc(8px + 1.5625vw);
-    margin-right: calc(8px + 1.5625vw);
+  .sm\:row-start-1 {
+    grid-row-start: 1;
   }
 
   .sm\:mx-0 {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .sm\:mx-\[calc\(8px\+1\.5625vw\)\] {
+    margin-left: calc(8px + 1.5625vw);
+    margin-right: calc(8px + 1.5625vw);
+  }
+
+  .sm\:mb-6 {
+    margin-bottom: 2.25rem;
   }
 
   .sm\:mb-\[-60px\] {
@@ -2331,8 +2400,16 @@ base {
     height: 94px;
   }
 
+  .sm\:h-auto {
+    height: auto;
+  }
+
   .sm\:h-full {
     height: 100%;
+  }
+
+  .sm\:h-40 {
+    height: 10rem;
   }
 
   .sm\:w-1\/4 {
@@ -2347,6 +2424,14 @@ base {
     width: 100%;
   }
 
+  .sm\:w-40 {
+    width: 10rem;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2359,12 +2444,24 @@ base {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .sm\:grid-cols-fathers-day-sm {
+    grid-template-columns: 1.5fr 1.5fr 2fr 1.5fr 1.5fr;
+  }
+
+  .sm\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:grid-rows-5 {
     grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 
   .sm\:flex-wrap {
@@ -2375,6 +2472,14 @@ base {
     align-items: flex-start;
   }
 
+  .sm\:items-end {
+    align-items: flex-end;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
   }
@@ -2383,21 +2488,33 @@ base {
     gap: 0.75rem;
   }
 
-  .sm\:gap-2 {
-    gap: 0.5rem;
-  }
-
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:self-end {
+    align-self: flex-end;
   }
 
   .sm\:rounded-sm {
     border-radius: 0.5rem;
   }
 
+  .sm\:p-0 {
+    padding: 0;
+  }
+
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .sm\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:pl-0 {
+    padding-left: 0;
   }
 
   .sm\:pl-1 {
@@ -2412,8 +2529,16 @@ base {
     text-align: left;
   }
 
+  .sm\:text-center {
+    text-align: center;
+  }
+
   .sm\:align-baseline {
     vertical-align: baseline;
+  }
+
+  .sm\:text-\[1\.75rem\] {
+    font-size: 1.75rem;
   }
 
   .sm\:opacity-0 {
@@ -2437,8 +2562,8 @@ base {
 
 @media (min-width: 1024px) {
   @media (min-width: 640px) {
-    .lg\:sm\:gap-4 {
-      gap: 1rem;
+    .lg\:sm\:grid-rows-2 {
+      grid-template-rows: repeat(2, minmax(0, 1fr));
     }
   }
 
@@ -2446,8 +2571,16 @@ base {
     visibility: visible;
   }
 
+  .lg\:invisible {
+    visibility: hidden;
+  }
+
   .lg\:collapse {
     visibility: collapse;
+  }
+
+  .lg\:absolute {
+    position: absolute;
   }
 
   .lg\:relative {
@@ -2458,12 +2591,28 @@ base {
     grid-column: span 1 / span 1;
   }
 
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
   }
 
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
   .lg\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .lg\:row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
   }
 
   .lg\:row-span-3 {
@@ -2488,12 +2637,20 @@ base {
     margin-bottom: 0;
   }
 
+  .lg\:mb-7 {
+    margin-bottom: 3rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0;
   }
 
   .lg\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .lg\:mt-7 {
+    margin-top: 3rem;
   }
 
   .lg\:flex {
@@ -2524,6 +2681,14 @@ base {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-fathers-day-lg {
+    grid-template-columns: 3fr 2fr 1fr 3fr;
+  }
+
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -2534,6 +2699,10 @@ base {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:self-center {
+    align-self: center;
   }
 
   .lg\:px-6 {
