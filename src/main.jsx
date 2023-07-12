@@ -1,7 +1,12 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 
-// import App from "./App";
-// import "./css/tailwind.css";
+// Clear the existing HTML content
+document.body.innerHTML = '<div id="app"></div>';
 
-// ReactDom.render(<App />, document.getElementById("root"));
+// Render your React component instead
+const root = createRoot(document.getElementById('app'));
+root.render(<h1>hello</h1>);
+
+
+
+

@@ -1771,16 +1771,16 @@ base {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\.\/assets\/imgs\/bg-blue\.svg\'\)\] {
-  background-image: url('../assets/imgs/bg-blue.svg');
+.bg-\[url\(\'\.\/assets\/imgs\/bg-blue\.svg\'\)\] {
+  background-image: url('./assets/imgs/bg-blue.svg');
 }
 
-.bg-\[url\(\'\.\.\/assets\/imgs\/bg-light-blue\.svg\'\)\] {
-  background-image: url('../assets/imgs/bg-light-blue.svg');
+.bg-\[url\(\'\.\/assets\/imgs\/bg-light-blue\.svg\'\)\] {
+  background-image: url('./assets/imgs/bg-light-blue.svg');
 }
 
-.bg-\[url\(\'\.\.\/assets\/imgs\/bg-tan\.svg\'\)\] {
-  background-image: url('../assets/imgs/bg-tan.svg');
+.bg-\[url\(\'\.\/assets\/imgs\/bg-tan\.svg\'\)\] {
+  background-image: url('./assets/imgs/bg-tan.svg');
 }
 
 .bg-no-repeat {
