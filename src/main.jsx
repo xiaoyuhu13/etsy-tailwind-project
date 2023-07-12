@@ -1,12 +1,6 @@
 import { createRoot } from 'react-dom/client';
+import { Gifts } from './components.jsx';
 
-// Clear the existing HTML content
-document.body.innerHTML = '<div id="app"></div>';
-
-// Render your React component instead
-const root = createRoot(document.getElementById('app'));
-root.render(<h1>hello</h1>);
-
-
-
-
+const giftsDomNode = document.getElementById('gifts');
+const root = createRoot(giftsDomNode);
+root.render(<Gifts />);
